@@ -94,4 +94,9 @@ Disadvantages:
 Complex Restoration Process, Restoring data can be slower and more complicated, as it requires the last full backup plus all incremental backups made since then.
 Risk of Loss, If one incremental backup file becomes corrupted or is lost, all subsequent backups may also be affected, complicating data recovery.
 Dependency Chain, The longer the chain of incremental backups, the more dependent the process becomes, which may increase the risk of failure.
+
+read reference are,
+https://www.spanning.com/blog/types-of-backup-understanding-full-differential-incremental-backup/
+https://www.techtarget.com/searchdatabackup/feature/Full-incremental-or-differential-How-to-choose-the-correct-backup-type
+https://www.unitrends.com/blog/types-of-backup-full-incremental-differential/
   
