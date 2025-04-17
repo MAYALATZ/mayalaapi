@@ -51,3 +51,47 @@ Conclusion
 By following these steps, you will be able to successfully create and deploy an API that meets the specified requirements of returning student information and subjects related to Software Engineering programs.
 
 
+  The three different backup are 
+  i.Incremental Backup,
+ ii. Differential backup, 
+  iii.and Full backup.
+ i. A full backup is the most complete type of backup where you clone all the selected data. This includes files, folders, SaaS applications, hard drives and more. The highlight of a full backup is the minimal time it requires to restore data.The highlight of a full backup is the minimal time it requires to restore data.
+ 
+ Advantages.
+Simplified Restoration, Since all data is consolidated in a single backup, restoring data is straightforward and typically the fastest method.
+Comprehensive Coverage, A full backup includes everything, ensuring no data is missed.
+Good for Initial Setup Useful for first-time backups and for setting a baseline for future backups.
+
+Disadvantages.
+
+Time-Consuming. Full backups can take a long time to complete, especially for large datasets.
+Storage Requirements. They require significant storage space, as all data is duplicated each time a full backup is performed.
+Administrative Overhead. Performing full backups can be resource-intensive, requiring regular scheduling and monitoring.
+
+ ii.A differential backup straddles the line between a full and an incremental backup. This type of backup involves backing up data that was created or changed since the last full backup. To put it simply, a full backup is done initially, and then subsequent backups are run to include all the changes made to the files and folders.
+ 
+ Advantages.
+
+Easier Restoration Process, To restore data, only the last full backup and the most recent differential backup are needed, making it less complex than an incremental backup restoration.
+Balanced Approach, Offers a middle ground between full and incremental backups in terms of storage and restoration complexity.
+Less Storage than Full Backup, Requires less storage space than full backups since it only captures changes since the last full backup.
+
+Disadvantages:
+
+Increasing Backup Times, Over time, as more data changes accumulate, differential backups can take longer to complete than incremental backups.
+Larger Storage Needs, While smaller than full backups, differential backups can consume more space than incremental backups because they continuously accumulate changes.
+Possible Performance Impact, If large amounts of data change frequently, differential backups can become substantial and may slow down performance on the backup server.
+
+ iii.Incremental Backup
+The first backup in an incremental backup is a full backup. The succeeding backups will only store changes that were made to the previous backup. Businesses have more flexibility in spinning these types of backups as often as they want, with only the most recent changes stored.Incremental backup requires space to store only the changes (increments), which allows for lightning-fast backups.
+
+  Advantages:
+Efficiency, Incremental backups save time and storage space, as only changed or new data is backed up.
+Faster Backup Times, Since less data is being copied, backups can be completed more quickly, allowing for more frequent backups.
+Reduced Storage Costs, Less storage space is needed compared to full backups since only changes are captured.
+
+Disadvantages:
+Complex Restoration Process, Restoring data can be slower and more complicated, as it requires the last full backup plus all incremental backups made since then.
+Risk of Loss, If one incremental backup file becomes corrupted or is lost, all subsequent backups may also be affected, complicating data recovery.
+Dependency Chain, The longer the chain of incremental backups, the more dependent the process becomes, which may increase the risk of failure.
+  
