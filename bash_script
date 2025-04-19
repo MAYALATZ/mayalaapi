@@ -1,0 +1,44 @@
+cONTAIN THE THE THREE SCRIPT THAT ARE 
+Health_check.sh
+
+ What Does health_check.sh Do?
+The script performs a series of checks to assess the system's health. These checks can include:​
+
+CPU Usage: Monitoring the current CPU load to detect potential performance issues.
+
+Memory Usage: Checking available and used memory to prevent out-of-memory situations.
+
+Disk Space: Ensuring that disk usage is within acceptable limits to avoid storage shortages.
+
+Service Status: Verifying that critical services (e.g., web servers, databases) are running as expected.
+
+Network Connectivity: Testing network interfaces and external connectivity to detect outages.
+
+Application Endpoints: Sending requests to application endpoints to confirm they respond correctly.​
+
+backup_api.sh
+application's files and databases, ensuring that data is preserved and can be restored in case of system failures or data loss.
+By automating this process, the script helps maintain regular backups without manual intervention,
+enhancing data reliability and recovery capabilities.​
+
+Typically, the script performs tasks such as compressing the API's source code and related files into a .tar.gz archive,
+exporting the application's database using tools like mysqldump, and storing these backups in a designated directory.
+Advanced versions of the script may include features like encrypting the backups for security, uploading them to remote storage services,
+and implementing retention policies to delete older backups automatically. 
+Logging mechanisms are also commonly integrated to record the success or failure of each backup operation, aiding in monitoring and troubleshooting.
+
+update_server.sh
+​The update_server.sh script is a Bash script designed to automate the process of updating a server's software and application code. 
+Its primary function is to streamline routine maintenance tasks, 
+ensuring that the server remains up-to-date with the latest software packages and application code from a version control system like Git.
+ the script performs the following actions:​
+
+Update System Packages.It runs commands like apt update and apt upgrade -y to fetch and install the latest versions of system packages.​
+
+Pull Latest Code from GitHub: It navigates to the application's directory and executes git pull to retrieve the most recent code changes from the repository.​
+
+Restart Services After updating the code, it restarts relevant services (e.g., web servers like Nginx or Apache) to apply the new changes.​
+
+Logging: Throughout the process, the script logs its actions and any errors encountered to a log file, 
+such as /var/log/update.log, 
+with timestamps for easy tracking.
