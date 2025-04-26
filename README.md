@@ -100,3 +100,20 @@ https://www.spanning.com/blog/types-of-backup-understanding-full-differential-in
 https://www.techtarget.com/searchdatabackup/feature/Full-incremental-or-differential-How-to-choose-the-correct-backup-type
 https://www.unitrends.com/blog/types-of-backup-full-incremental-differential/
   
+ assigment 3 doocker containerization
+ 
+ Dockerfile build instructions:
+•	docker build -t mayalaapi .
+•	docker run -d -p 5000:5000 mayalaapi
+•	 Docker Compose usage:
+•	docker-compose up --build -d
+Common issues & solutions:
+o	Port conflicts
+o	MySQL connection errors 
+•	 Link to Docker image:
+•	Pull Docker image: https://hub.docker.com/r/mayalatz/mayalaapi
+
+_______________Docker Registry Upload
+docker tag mmayalatz/mayalaapi:latest
+docker push mayalatx/mmayalaapi:latest
+_________________________
